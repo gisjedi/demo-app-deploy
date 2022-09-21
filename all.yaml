@@ -25,7 +25,13 @@ spec:
         app: demo-app
     spec:
       containers:
-      - image: ghcr.io/gisjedi/demo-app:de79f41f10a113cfb7ebccf6d624f8fa3b1edf47
+      - env:
+        - name: SECRET
+          valueFrom:
+            secretKeyRef:
+              key: secret-key
+              name: my-secret
+        image: ghcr.io/gisjedi/demo-app:de79f41f10a113cfb7ebccf6d624f8fa3b1edf47
         name: demo-app
         ports:
         - containerPort: 8080
