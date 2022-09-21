@@ -7,4 +7,4 @@ resources:
 images:
 - name: ghcr.io/argocon2022-workshop/demo-app
   newName: ghcr.io/gisjedi/demo-app
-  newTag: d6266a392ccffb5a9f069a30064969d247a52bef
+  newTag: 5f7c5235f55ad648555a6fefbaedb4c230315d63
