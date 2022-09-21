@@ -3,3 +3,7 @@ kind: Kustomization
 
 resources:
 - ../../base
+images:
+- name: ghcr.io/argocon2022-workshop/demo-app
+  newName: ghcr.io/gisjedi/demo-app
+  newTag: 590aa3f269e5c794dfb5c1f99d838e75b83c0172
